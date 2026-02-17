@@ -1,0 +1,68 @@
+{
+  "name": "eu-tax-id-validator",
+  "version": "1.0.0",
+  "description": "Validate European tax IDs (VAT numbers, NIF, CIF) with format checks and checksum verification. Supports 30 countries: 27 EU + UK, Norway, Switzerland. Zero dependencies.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vat",
+    "tax-id",
+    "nif",
+    "cif",
+    "vat-number",
+    "validation",
+    "checksum",
+    "european",
+    "eu",
+    "vies",
+    "tax",
+    "company",
+    "business",
+    "nip",
+    "cvr",
+    "ico",
+    "uid"
+  ],
+  "author": "VeriCorp",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vericorptest-collab/eu-tax-id-validator.git"
+  },
+  "homepage": "https://github.com/vericorptest-collab/eu-tax-id-validator#readme",
+  "bugs": {
+    "url": "https://github.com/vericorptest-collab/eu-tax-id-validator/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
