@@ -110,7 +110,7 @@ AT, BE, BG, CY, DE, EE, EL (Greece), ES, FR, GB, HR, HU, IE, IT, LT, LU, LV, MT,
 
 Need **live company data** — name, address, legal form, directors, VAT status?
 
-**[VeriCorp API](https://rapidapi.com/vericorp/api/vericorp-api)** enriches tax IDs with real-time data from official registries across Europe. 8 countries with full enrichment, 27 with VAT validation.
+**[VeriCorp API](https://rapidapi.com/vericorptestcollab/api/vericorp)** enriches tax IDs with real-time data from official registries across Europe. 8 countries with full enrichment, 27 with VAT validation.
 
 ```typescript
 // Local validation (this package)
@@ -121,7 +121,7 @@ validateTaxId('PT502011378');
 // → name: "Nexperience Lda", status: "active", address: "...", legal_form: "Lda", ...
 ```
 
-**[Get your free API key →](https://rapidapi.com/vericorp/api/vericorp-api)**
+**[Get your free API key →](https://rapidapi.com/vericorptestcollab/api/vericorp)**
 
 ## License
 
